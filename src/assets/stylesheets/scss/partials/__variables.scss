@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,900');
+
+// Initial variables
+$black: #121212;
+$grey: #EEEEEE;
+$white: #FFFFFF;
+
+$turquoise: #49BFB7;
+$yellow: #F0E467;
+
+
+// Derived variables
+$primary: $turquoise;
+$secondary: $yellow;
+
+$font-body: 'Montserrat',
+sans-serif;
+$font-heading: 'Playfair Display',
+sans-serif;
