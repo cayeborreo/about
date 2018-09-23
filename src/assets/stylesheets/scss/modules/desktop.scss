@@ -15,6 +15,14 @@ div:empty {
   display: block;
 }
 
+.container {
+  @include container;
+}
+
+.container>div {
+  width: 70%;
+}
+
 // TYPOGRAPHY
 
 body,
@@ -57,6 +65,10 @@ b {
       text-shadow: -.5rem .5rem 0 $black;
     }
 
+    &.has-grey-shadow {
+      text-shadow: -.5rem .5rem 0 $grey-dark;
+    }
+
     &.is-primary {
       color: $primary;
     }
@@ -96,6 +108,10 @@ a:hover {
   .has-padding-#{$i} {
     padding: .5rem * $i;
   }
+}
+
+.has-no-padding {
+  padding: 0;
 }
 
 // TABLES
@@ -153,44 +169,42 @@ table {
   min-height: 3rem;
 }
 
-// CONTAINERS
-.container1>div,
-.container2>div,
-.container3>div,
-.footer>div {
-  width: 70%;
-}
+.footer-links {
+  display: flex;
+  justify-content: center;
 
+  .link {
+    @include footer-link;
+    border-width: .6rem;
+    padding: 1rem;
+    margin: .25rem 1rem;
 
-// INTRODUCTION
+    .footer-icon {
+      color: $secondary;
+      font-size: 1.5rem;
+      margin-right: 1rem;
+    }
+  }
 
-.container1 {
-  @include container;
-  background-color: $primary;
-}
+  .link:hover {
+    background: $primary;
 
-// FASTFACTS
-.container2 {
-  @include container;
-  background: $secondary;
-
-  .circles {
-    @include pattern;
+    .footer-icon {
+      color: $black;
+    }
   }
 }
 
-// PROFILE
-.container3 {
-  @include container;
-  background: $white;
-
-  .circles {
-    @include pattern;
-  }
+.carousel-status,
+.thumbs-wrapper.axis-vertical {
+  display: none;
 }
 
-// FOOTER
-.footer {
-  @include container;
-  background: $primary;
+.samplecarousel {
+  padding: 2rem .5rem;
+
+  img {
+    display: inline-block;
+    float: left;
+  }
 }

@@ -10,7 +10,7 @@ const MobileContent = () => (
       <tbody>
         <tr>
           <td colSpan="3" className="has-background-primary has-padding-5">
-            <div className="h1">PROFILE</div>
+            <div className="h3 has-white-shadow">Previous work</div>
           </td>
         </tr>
 
@@ -21,6 +21,7 @@ const MobileContent = () => (
               href="http://web.archive.org/web/20150719234753/http://blogskins.com/me/ohfudge1"
               target="_blank"
               title="ohfudge!'s profile"
+              rel="noopener noreferrer"
             >
               several layouts
             </a>{" "}
@@ -51,6 +52,7 @@ const DesktopContent = () => (
               href="http://web.archive.org/web/20150719234753/http://blogskins.com/me/ohfudge1"
               target="_blank"
               title="ohfudge!'s profile"
+              rel="noopener noreferrer"
             >
               several layouts
             </a>{" "}
