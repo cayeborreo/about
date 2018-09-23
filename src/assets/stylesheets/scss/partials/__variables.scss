@@ -1,20 +1,19 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,900');
+@import url('https://fonts.googleapis.com/css?family=Lora|Raleway:900');
 
 // Initial variables
 $black: #121212;
 $grey: #EEEEEE;
 $white: #FFFFFF;
 
-$turquoise: #49BFB7;
-$yellow: #F0E467;
+$turquoise: #A3D9D3;
+$yellow: #f0e48e;
 
 
 // Derived variables
-$primary: $turquoise;
-$secondary: $yellow;
+$primary: $yellow;
+$secondary: $turquoise;
 
-$font-body: 'Montserrat',
+$font-body: 'Lora',
 sans-serif;
-$font-heading: 'Playfair Display',
+$font-heading: 'Raleway',
 sans-serif;

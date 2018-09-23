@@ -1,0 +1,93 @@
+@import '../partials/_mixins';
+@import '../partials/_variables';
+
+// CONTAINERS AND SHAPES
+
+body {
+  cursor: default;
+  margin: 0;
+  font-family: $font-body;
+  font-size: 2rem;
+  color: $black;
+}
+
+div:empty {
+  display: block;
+}
+
+strong,
+b {
+  font-family: $font-heading;
+}
+
+// TYPOGRAPHY
+.h1 {
+  font-family: $font-heading;
+  font-size: 7rem;
+  font-weight: 700;
+  color: $black;
+}
+
+// MARGIN & PADDING
+@for $i from 1 through 5 {
+  .has-margin-#{$i} {
+    margin: .5rem * $i;
+  }
+}
+
+@for $i from 1 through 5 {
+  .has-padding-#{$i} {
+    padding: .5rem * $i;
+  }
+}
+
+// TABLES
+table {
+  border: .3rem solid $black;
+  background: $white;
+  border-spacing: 0;
+
+  td,
+  tr {
+    border: .3rem solid $black;
+  }
+}
+
+
+// INTRODUCTION
+
+.container1 {
+  @include container;
+  background-color: $primary;
+
+  .introduction {
+    position: relative;
+    z-index: 5;
+
+    .rectangle {
+      display: block;
+      min-height: 3rem;
+      background: $secondary;
+      border-style: solid;
+      border-color: $white;
+      border-width: .5rem 0 0 .5rem;
+      color: $secondary;
+    }
+
+    .diag-lines {
+      @include pattern;
+      background-image: url('../../images/pattern-diagonal_lines.png');
+      min-height: 3rem;
+    }
+  }
+}
+
+// PROFILE
+.container2 {
+  @include container;
+  background: $secondary;
+
+  .circles {
+    @include pattern;
+  }
+}

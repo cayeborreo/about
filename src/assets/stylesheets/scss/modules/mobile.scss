@@ -1,0 +1,48 @@
+@import '../partials/_mixins';
+@import '../partials/_variables';
+
+// SHAPES
+
+@media only screen and (max-width: 400px) {
+
+  body,
+  td,
+  tr,
+  div,
+  p {
+    font-size: 1rem;
+  }
+
+  .container1 {
+    @include container-mobile;
+    background: $primary;
+  }
+
+  // MARGIN AND PADDING
+  @for $i from 1 through 5 {
+    .has-margin-#{$i} {
+      margin: .25rem * $i;
+    }
+  }
+
+  @for $i from 1 through 5 {
+    .has-padding-#{$i} {
+      padding: .25rem * $i;
+    }
+  }
+
+  // TYPOGRAPHY
+
+  .h1 {
+    font-family: $font-heading;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: $black;
+  }
+
+  // PROFILE
+  .container2 {
+    @include container-mobile;
+    background: $secondary;
+  }
+}

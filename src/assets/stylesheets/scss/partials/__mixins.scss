@@ -1,0 +1,23 @@
+@mixin triangle {
+  width: 0;
+  height: 0;
+  border-color: $black transparent;
+  border-style: solid;
+}
+
+@mixin pattern {
+  background-repeat: repeat;
+  background-position: top left;
+}
+
+@mixin container {
+  display: block;
+  margin: 0;
+  padding: 5rem;
+}
+
+@mixin container-mobile {
+  display: block;
+  margin: 0;
+  padding: 2.5rem;
+}
