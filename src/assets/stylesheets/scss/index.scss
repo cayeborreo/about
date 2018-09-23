@@ -20,5 +20,9 @@
   background: $secondary;
 }
 
+.has-background-grey {
+  background: $grey;
+}
+
 @import './modules/desktop.scss';
 @import './modules/mobile.scss';

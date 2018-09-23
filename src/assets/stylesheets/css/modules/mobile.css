@@ -1,15 +1,15 @@
 @import url("https://fonts.googleapis.com/css?family=Lora|Raleway:900");
 @media only screen and (max-width: 400px) {
-  body,
-  td,
-  tr,
-  div,
-  p {
-    font-size: 1rem; }
+  .container1 > div,
+  .container2 > div,
+  .container3 > div {
+    width: 100%; }
   .container1 {
     display: block;
     margin: 0;
-    padding: 2.5rem;
+    padding: 8rem 2.5rem;
+    display: flex;
+    justify-content: center;
     background: #f0e48e; }
   .has-margin-1 {
     margin: 0.25rem; }
@@ -31,13 +31,85 @@
     padding: 1rem; }
   .has-padding-5 {
     padding: 1.25rem; }
+  body,
+  td,
+  p,
+  div {
+    font-size: 1rem; }
+  big {
+    font-size: 1.5rem; }
+  strong,
+  b {
+    font-family: "Raleway", sans-serif;
+    background: #f0e48e; }
   .h1 {
     font-family: "Raleway", sans-serif;
     font-size: 2.5rem;
     font-weight: 700;
     color: #121212; }
+    .h1.has-primary-shadow {
+      text-shadow: -0.2rem 0.2rem 0 #f0e48e; }
+    .h1.has-secondary-shadow {
+      text-shadow: -0.2rem 0.2rem 0 #A3D9D3; }
+    .h1.has-white-shadow {
+      text-shadow: -0.2rem 0.2rem 0 #FFFFFF; }
+    .h1.has-black-shadow {
+      text-shadow: -0.2rem 0.2rem 0 #121212; }
+    .h1.is-primary {
+      color: #f0e48e; }
+    .h1.is-secondary {
+      color: #A3D9D3; }
+    .h1.is-white {
+      color: #FFFFFF; }
+  .h2 {
+    font-family: "Raleway", sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #121212; }
+    .h2.has-primary-shadow {
+      text-shadow: -0.2rem 0.2rem 0 #f0e48e; }
+    .h2.has-secondary-shadow {
+      text-shadow: -0.2rem 0.2rem 0 #A3D9D3; }
+    .h2.has-white-shadow {
+      text-shadow: -0.2rem 0.2rem 0 #FFFFFF; }
+    .h2.has-black-shadow {
+      text-shadow: -0.2rem 0.2rem 0 #121212; }
+    .h2.is-primary {
+      color: #f0e48e; }
+    .h2.is-secondary {
+      color: #A3D9D3; }
+    .h2.is-white {
+      color: #FFFFFF; }
+  .h3 {
+    font-family: "Raleway", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #121212; }
+    .h3.has-primary-shadow {
+      text-shadow: -0.2rem 0.2rem 0 #f0e48e; }
+    .h3.has-secondary-shadow {
+      text-shadow: -0.2rem 0.2rem 0 #A3D9D3; }
+    .h3.has-white-shadow {
+      text-shadow: -0.2rem 0.2rem 0 #FFFFFF; }
+    .h3.has-black-shadow {
+      text-shadow: -0.2rem 0.2rem 0 #121212; }
+    .h3.is-primary {
+      color: #f0e48e; }
+    .h3.is-secondary {
+      color: #A3D9D3; }
+    .h3.is-white {
+      color: #FFFFFF; }
   .container2 {
     display: block;
     margin: 0;
-    padding: 2.5rem;
-    background: #A3D9D3; } }
+    padding: 8rem 2.5rem;
+    display: flex;
+    justify-content: center;
+    background: #A3D9D3; }
+  .container3 {
+    display: block;
+    margin: 0;
+    padding: 8rem 2.5rem;
+    display: flex;
+    justify-content: center;
+    background: #FFFFFF; } }

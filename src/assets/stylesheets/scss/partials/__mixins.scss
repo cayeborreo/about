@@ -13,11 +13,15 @@
 @mixin container {
   display: block;
   margin: 0;
-  padding: 5rem;
+  padding: 18rem 0;
+  display: flex;
+  justify-content: center;
 }
 
 @mixin container-mobile {
   display: block;
   margin: 0;
-  padding: 2.5rem;
+  padding: 8rem 2.5rem;
+  display: flex;
+  justify-content: center;
 }

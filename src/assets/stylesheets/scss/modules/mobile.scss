@@ -5,12 +5,10 @@
 
 @media only screen and (max-width: 400px) {
 
-  body,
-  td,
-  tr,
-  div,
-  p {
-    font-size: 1rem;
+  .container1>div,
+  .container2>div,
+  .container3>div {
+    width: 100%;
   }
 
   .container1 {
@@ -33,16 +31,69 @@
 
   // TYPOGRAPHY
 
-  .h1 {
-    font-family: $font-heading;
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: $black;
+  body,
+  td,
+  p,
+  div {
+    font-size: 1rem;
   }
 
-  // PROFILE
+  big {
+    font-size: 1.5rem;
+  }
+
+  strong,
+  b {
+    font-family: $font-heading;
+    background: $primary;
+  }
+
+  @for $i from 1 through 3 {
+    .h#{$i} {
+      font-family: $font-heading;
+      font-size: 3rem - ($i*.5rem);
+      font-weight: 700;
+      color: $black;
+
+      &.has-primary-shadow {
+        text-shadow: -.2rem .2rem 0 $primary;
+      }
+
+      &.has-secondary-shadow {
+        text-shadow: -.2rem .2rem 0 $secondary;
+      }
+
+      &.has-white-shadow {
+        text-shadow: -.2rem .2rem 0 $white;
+      }
+
+      &.has-black-shadow {
+        text-shadow: -.2rem .2rem 0 $black;
+      }
+
+      &.is-primary {
+        color: $primary;
+      }
+
+      &.is-secondary {
+        color: $secondary;
+      }
+
+      &.is-white {
+        color: $white;
+      }
+    }
+  }
+
+  // FASTFACTS
   .container2 {
     @include container-mobile;
     background: $secondary;
+  }
+
+  // PROFILE
+  .container3 {
+    @include container-mobile;
+    background: $white;
   }
 }

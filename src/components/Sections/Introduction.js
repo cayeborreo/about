@@ -6,18 +6,20 @@ import DumbCard from "../Dumbcard";
 
 const MobileContent = () => (
   <Fragment>
-    <table cellPadding="0" cellSpacing="0" width="100%">
+    <table cellPadding="0" cellSpacing="0">
       <tbody>
         <tr>
           <td colSpan="3">
-            <div className="rectangle">&nbsp;</div>
+            <div className="rectangle is-secondary">&nbsp;</div>
           </td>
         </tr>
 
         <tr>
           <td colSpan="3" className="has-padding-5">
-            <div className="h1">Hello.</div>
-            I’m <b>Caye</b>. Nice to meet you.
+            <div className="h1 has-primary-shadow">Hello.</div>
+            <big>
+              I’m <b>Caye</b>. Nice to meet you.
+            </big>
           </td>
         </tr>
 
@@ -33,18 +35,20 @@ const MobileContent = () => (
 
 const DesktopContent = () => (
   <Fragment>
-    <table cellPadding="0" cellSpacing="0" width="70%">
+    <table cellPadding="0" cellSpacing="0">
       <tbody>
         <tr>
           <td colSpan="3">
-            <div className="rectangle">&nbsp;</div>
+            <div className="rectangle is-secondary">&nbsp;</div>
           </td>
         </tr>
 
         <tr>
           <td colSpan="3" className="has-padding-5">
-            <div className="h1">Hello.</div>
-            I’m <b>Caye</b>. Nice to meet you.
+            <div className="h1 has-primary-shadow">Hello.</div>
+            <big>
+              I’m <b>Caye</b>. Nice to meet you.
+            </big>
           </td>
         </tr>
 

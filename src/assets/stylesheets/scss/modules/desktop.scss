@@ -7,7 +7,7 @@ body {
   cursor: default;
   margin: 0;
   font-family: $font-body;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: $black;
 }
 
@@ -15,17 +15,74 @@ div:empty {
   display: block;
 }
 
+// TYPOGRAPHY
+
+body,
+td,
+p,
+div {
+  font-size: 1.75rem;
+}
+
+big {
+  font-size: 2rem;
+}
+
 strong,
 b {
   font-family: $font-heading;
+  background: $primary;
 }
 
-// TYPOGRAPHY
-.h1 {
-  font-family: $font-heading;
-  font-size: 7rem;
-  font-weight: 700;
+@for $i from 1 through 3 {
+  .h#{$i} {
+    font-family: $font-heading;
+    font-size: 8rem - ($i*1rem);
+    font-weight: 700;
+    color: $black;
+
+    &.has-primary-shadow {
+      text-shadow: -.5rem .5rem 0 $primary;
+    }
+
+    &.has-secondary-shadow {
+      text-shadow: -.5rem .5rem 0 $secondary;
+    }
+
+    &.has-white-shadow {
+      text-shadow: -.5rem .5rem 0 $white;
+    }
+
+    &.has-black-shadow {
+      text-shadow: -.5rem .5rem 0 $black;
+    }
+
+    &.is-primary {
+      color: $primary;
+    }
+
+    &.is-secondary {
+      color: $secondary;
+    }
+
+    &.is-white {
+      color: $white;
+    }
+  }
+}
+
+// LINKS
+a,
+a:link,
+a:visited {
   color: $black;
+  text-decoration: none;
+  cursor: pointer;
+  border-bottom: .25rem solid $primary;
+}
+
+a:hover {
+  background: $primary;
 }
 
 // MARGIN & PADDING
@@ -46,11 +103,62 @@ table {
   border: .3rem solid $black;
   background: $white;
   border-spacing: 0;
+  flex: 1 100%;
+  width: 100%;
+
+  &.is-borderless {
+    border: none;
+
+    td,
+    tr {
+      border: none;
+    }
+  }
 
   td,
   tr {
     border: .3rem solid $black;
   }
+}
+
+// SHAPES
+.rectangle {
+  display: block;
+  min-height: 3rem;
+  border-style: solid;
+  border-color: $white;
+  border-width: .5rem 0 0 .5rem;
+  background: $primary;
+  color: $primary;
+
+  &.is-primary {
+    background: $primary;
+    color: $primary;
+  }
+
+  &.is-secondary {
+    background: $secondary;
+    color: $secondary;
+  }
+
+  &.is-black {
+    background: $black;
+    color: $black;
+  }
+}
+
+.diag-lines {
+  @include pattern;
+  background-image: url('../../images/pattern-diagonal_lines.png');
+  min-height: 3rem;
+}
+
+// CONTAINERS
+.container1>div,
+.container2>div,
+.container3>div,
+.footer>div {
+  width: 70%;
 }
 
 
@@ -59,30 +167,9 @@ table {
 .container1 {
   @include container;
   background-color: $primary;
-
-  .introduction {
-    position: relative;
-    z-index: 5;
-
-    .rectangle {
-      display: block;
-      min-height: 3rem;
-      background: $secondary;
-      border-style: solid;
-      border-color: $white;
-      border-width: .5rem 0 0 .5rem;
-      color: $secondary;
-    }
-
-    .diag-lines {
-      @include pattern;
-      background-image: url('../../images/pattern-diagonal_lines.png');
-      min-height: 3rem;
-    }
-  }
 }
 
-// PROFILE
+// FASTFACTS
 .container2 {
   @include container;
   background: $secondary;
@@ -90,4 +177,20 @@ table {
   .circles {
     @include pattern;
   }
+}
+
+// PROFILE
+.container3 {
+  @include container;
+  background: $white;
+
+  .circles {
+    @include pattern;
+  }
+}
+
+// FOOTER
+.footer {
+  @include container;
+  background: $primary;
 }

@@ -6,11 +6,25 @@ import DumbCard from "../Dumbcard";
 
 const MobileContent = () => (
   <Fragment>
-    <table cellPadding="0" cellSpacing="0" width="100%">
+    <table cellPadding="0" cellSpacing="0">
       <tbody>
         <tr>
-          <td colSpan="3">
-            <div className="circles">&nbsp;</div>
+          <td colSpan="3" className="has-background-primary has-padding-5">
+            <div className="h1">PROFILE</div>
+          </td>
+        </tr>
+
+        <tr>
+          <td className="has-padding-5">
+            I used to be part of the Blogskins community (RIP), where I made{" "}
+            <a
+              href="http://web.archive.org/web/20150719234753/http://blogskins.com/me/ohfudge1"
+              target="_blank"
+              title="ohfudge!'s profile"
+            >
+              several layouts
+            </a>{" "}
+            for Blogger.
           </td>
         </tr>
       </tbody>
@@ -20,16 +34,27 @@ const MobileContent = () => (
 
 const DesktopContent = () => (
   <Fragment>
-    <table cellPadding="0" cellSpacing="0" width="70%">
+    <table cellPadding="0" cellSpacing="0">
       <tbody>
         <tr>
-          <td colSpan="2">
-            <div className="circles">&nbsp;</div>
+          <td className="has-background-primary has-padding-5">
+            <div className="h3 has-white-shadow">Previous work</div>
           </td>
-          <td>
-            <div className="diag-lines" height="20%">
-              &nbsp;
-            </div>
+
+          <td className="has-background-secondary diag-lines" width="20%" />
+        </tr>
+
+        <tr>
+          <td className="has-padding-5" colSpan="2">
+            I used to be part of the Blogskins community (RIP), where I made{" "}
+            <a
+              href="http://web.archive.org/web/20150719234753/http://blogskins.com/me/ohfudge1"
+              target="_blank"
+              title="ohfudge!'s profile"
+            >
+              several layouts
+            </a>{" "}
+            for Blogger.
           </td>
         </tr>
       </tbody>
