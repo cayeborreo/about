@@ -1,19 +1,57 @@
 @import '../partials/_mixins';
 @import '../partials/_variables';
 
-// SHAPES
+@media only screen and (max-width: 800px) {
+
+  body,
+  td,
+  p,
+  div {
+    font-size: 1.1rem;
+  }
+
+  big {
+    font-size: 1.3rem;
+  }
+
+  strong,
+  b {
+    font-family: $font-heading;
+    background: $primary;
+  }
+
+  @for $i from 1 through 3 {
+    .h#{$i} {
+      font-family: $font-heading;
+      font-size: 4rem - ($i*.25rem);
+      font-weight: 700;
+      color: $black;
+    }
+  }
+
+  .footer-links {
+    .link {
+      border-width: .6rem;
+      padding: .75rem;
+      margin: 0 .5rem;
+
+      .footer-icon {
+        color: $secondary;
+        font-size: 1.5rem;
+        margin-right: 1rem;
+      }
+    }
+  }
+}
 
 @media only screen and (max-width: 400px) {
 
-  .container1>div,
-  .container2>div,
-  .container3>div {
+  .container>div {
     width: 100%;
   }
 
-  .container1 {
+  .container {
     @include container-mobile;
-    background: $primary;
   }
 
   // MARGIN AND PADDING
@@ -27,6 +65,10 @@
     .has-padding-#{$i} {
       padding: .25rem * $i;
     }
+  }
+
+  .has-no-padding {
+    padding: 0;
   }
 
   // TYPOGRAPHY
@@ -71,6 +113,10 @@
         text-shadow: -.2rem .2rem 0 $black;
       }
 
+      &.has-grey-shadow {
+        text-shadow: -.2rem .2rem 0 $grey-dark;
+      }
+
       &.is-primary {
         color: $primary;
       }
@@ -85,15 +131,24 @@
     }
   }
 
-  // FASTFACTS
-  .container2 {
-    @include container-mobile;
-    background: $secondary;
+  .footer-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .link {
+      @include footer-link;
+      width: 100%;
+      border-width: .4rem;
+      padding: .5rem;
+      margin: .25rem 1rem;
+
+      .footer-icon {
+        color: $secondary;
+        font-size: 1rem;
+        margin-right: .5rem;
+      }
+    }
   }
 
-  // PROFILE
-  .container3 {
-    @include container-mobile;
-    background: $white;
-  }
 }

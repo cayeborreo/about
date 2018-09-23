@@ -10,16 +10,16 @@ const MobileContent = () => (
       <tbody>
         <tr>
           <td className="has-background-black has-padding-3">
-            <div className="h3 is-primary">Fast facts</div>
+            <div className="h3 is-primary has-grey-shadow">Fast facts</div>
           </td>
         </tr>
         <tr>
           <td className="has-padding-3">
             <ul>
-              <li>Frontend developer, graphic designer based in Manila</li>
-              <li>Registered pharmacist (2018)</li>
+              <li>Aspiring frontend developer, graphic designer from Manila</li>
+              <li>Registered pharmacist as of 2018</li>
               <li>
-                Fluent in <b>HTML</b>, <b>CSS</b>, and currently learning{" "}
+                Fluent in <b>HTML</b>, <b>CSS (Sass)</b>, and currently learning{" "}
                 <b>React</b> and <b>JavaScript</b>
               </li>
               <li>
@@ -39,16 +39,16 @@ const DesktopContent = () => (
       <tbody>
         <tr>
           <td className="has-background-black has-padding-5">
-            <div className="h3 is-primary">Fast facts</div>
+            <div className="h3 is-primary has-grey-shadow">Fast facts</div>
           </td>
         </tr>
         <tr>
           <td className="has-padding-5">
             <ul>
-              <li>Frontend developer, graphic designer based in Manila</li>
-              <li>Registered pharmacist (2018)</li>
+              <li>Aspiring frontend developer, graphic designer from Manila</li>
+              <li>Registered pharmacist as of 2018</li>
               <li>
-                Fluent in <b>HTML</b>, <b>CSS</b>, and currently learning{" "}
+                Fluent in <b>HTML</b>, <b>CSS (Sass)</b>, and currently learning{" "}
                 <b>React</b> and <b>JavaScript</b>
               </li>
               <li>
