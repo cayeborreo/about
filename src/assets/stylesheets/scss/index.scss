@@ -1,33 +1,28 @@
-.App {
-  text-align: center;
+@charset "utf-8";
+
+@import './partials/_mixins';
+@import './partials/_variables';
+
+// @import '../../../../node_modules/bulma/sass/utilities/_all.sass';
+// @import '../../../../node_modules/bulma/sass/grid/_all.sass';
+// @import '../../../../node_modules/bulma/sass/utilities/initial-variables.sass';
+// @import '../../../../node_modules/bulma/sass/utilities/mixins.sass';
+
+.has-background-black {
+  background: $black;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.has-background-primary {
+  background: $primary;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.has-background-secondary {
+  background: $secondary;
 }
 
-.App-title {
-  font-size: 1.5em;
+.has-background-grey {
+  background: $grey;
 }
 
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
-}
+@import './modules/desktop.scss';
+@import './modules/mobile.scss';
