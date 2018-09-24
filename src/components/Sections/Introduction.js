@@ -65,7 +65,7 @@ const DesktopContent = () => (
 export default class Introduction extends Component {
   getSize = () => {
     const width = this.container.offsetWidth;
-    if (width <= 400) {
+    if (width <= 412) {
       return {
         desktop: false,
         mobile: true,

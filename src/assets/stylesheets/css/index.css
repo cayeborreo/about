@@ -283,7 +283,7 @@ table {
       font-size: 1.5rem;
       margin-right: 1rem; } }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 414px) {
   .container > div {
     width: 100%; }
   .container {
