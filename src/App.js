@@ -47,10 +47,10 @@ class App extends Component {
           <Profile />
         </div>
 
-        <div ref={this.card} className="container has-background-secondary">
+        {/* <div ref={this.card} className="container has-background-secondary"> */}
           {/* <SampleCarousel /> */}
-          <b>*Carousel in-progress*</b>
-        </div>
+          {/* <b>*Carousel in-progress*</b>
+        </div> */}
 
         <div ref={this.card} className="container has-background-primary">
           <Footer />
