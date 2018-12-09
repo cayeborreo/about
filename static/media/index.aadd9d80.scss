@@ -1,0 +1,53 @@
+@charset "utf-8";
+
+@import './partials/_mixins';
+@import './partials/_variables';
+
+// @import '../../../../node_modules/bulma/sass/utilities/_all.sass';
+// @import '../../../../node_modules/bulma/sass/grid/_all.sass';
+// @import '../../../../node_modules/bulma/sass/utilities/initial-variables.sass';
+// @import '../../../../node_modules/bulma/sass/utilities/mixins.sass';
+
+.has-background-black {
+  background: $black;
+}
+
+.has-background-primary {
+  background: $primary;
+}
+
+.has-background-secondary {
+  background: $secondary;
+}
+
+.has-background-grey {
+  background: $grey;
+}
+
+.has-background-grey-dark {
+  background: $grey-dark;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $white;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $grey-dark;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $grey;
+}
+
+@import './modules/desktop.scss';
+@import './modules/mobile.scss';
+@import './modules/modal.scss';
